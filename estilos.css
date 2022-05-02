@@ -32,12 +32,14 @@
 .tituloIndex{
     color: white;
     font-weight: bold;
-    font-size: 400%;
+    font-size: 500%;
     text-align: center;
     margin-bottom: 10%;
     padding-top: 10%;
     word-spacing: 30px;
     letter-spacing: 15px;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
 }
 .infoMain{
     padding-left: 5%;
@@ -70,16 +72,29 @@
 .numeros{
     margin-top: 10%;
     margin-bottom: 10%;
+    animation-name: animacionNumeros;
+    animation-duration: 2s;
 }
 .listaNumeros{
     color:white;
     list-style: none;
     text-align: center;
     font-size: 120%;
-    border-color: rgb(133, 133, 133) ;
+    border-color: rgb(97, 0, 0) ;
     border-radius: 5%;
     border-style: solid;
     background-color: black; 
+    position: relative;
+    animation-name: animarNumeros; 
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animarNumeros {
+    from { box-shadow: none;}
+    to {box-shadow: -10px -10px 20px rgb(97, 0, 0);}
 }
 
 .listaNumerosTamaño{
@@ -98,7 +113,7 @@
 }
 @media only screen and (max-width:500px) {
     .tituloIndex{
-        font-size: 320%;
+        font-size: 310%;
     }
     .h2Index{
         font-size: 200%;
@@ -153,6 +168,8 @@
     margin-bottom: 10%;
     margin-right: 5%;
     margin-left: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
 }
 .tableRaces{
     font-family: 'Exo 2',sans-serif;
@@ -217,6 +234,8 @@
     margin-left: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
 }
 .logosEquipos{
     display: flex;
@@ -231,6 +250,8 @@
     height: 120px;
     margin-top: 5%;
     margin-right: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 3s;
 }
 .fotoPilotos{
     height: 380px;
@@ -318,6 +339,8 @@
     padding-bottom: 5%;
     margin-right: 6%;
     margin-left: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
 }        
 .leyendas1{
     text-align: right;
@@ -403,6 +426,8 @@
     margin-right: 6%;
     margin-left: 5%;
     margin-bottom: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
 }
 .circuitos{
     text-align: center;
@@ -449,6 +474,8 @@
     font-size: 350%;
     color: white;
     padding-top: 3%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
 }
 .pContacto{
     font-size: 150%;
