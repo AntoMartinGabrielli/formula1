@@ -1,0 +1,102 @@
+.mainPyE{
+    background-color: map-get($color, fondo);
+    background-image: url($foto-fondo);
+    font-family: $tipografia-texto;
+    width: 100vw;
+}
+.h1PyE{
+    font-size: 400%;
+    color: map-get($color, texto);
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
+}
+.logosEquipos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 18%;
+    margin-left: 18%;
+    margin-bottom: 5%;
+}
+.logoEquipo{
+    height: 120px;
+    margin-top: 5%;
+    margin-right: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 3s;
+}
+.fotoPilotos{
+    height: 380px;
+}
+.h2Equipos{
+    color: map-get($color, texto);
+    font-size: 300%;
+    margin-left: 5%;
+}
+.h3Pilotos{
+    color: map-get($color, texto);
+    font-size: 180%;
+    text-align: left;
+}
+.h4Equipos{
+    color:map-get($color, texto);
+    font-size: 120%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-weight: lighter;
+    text-align: justify;
+}
+.h4Pilotos{
+    margin-top:5%;
+    color: map-get($color, texto);
+    font-size: 120%;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 2;
+}
+
+@media only screen and (max-width:992px){
+    .fotoP{
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .infoP{
+        padding-left:10%;
+    }
+    .logoEquipo{
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .fotoPilotos{
+        height: 280px ;
+    }
+    .logoEquipo{
+        height: 60px;
+    }
+    .h1PyE{
+        font-size: 250%;
+    }
+    .h2Equipos{
+        font-size: 200%;
+    }
+    .h3Pilotos{
+        font-size: 120%;
+    }
+    .h4Equipos{
+        font-size: 90%;
+    }
+    .h4Pilotos{
+        font-size: 90%;
+    }
+}

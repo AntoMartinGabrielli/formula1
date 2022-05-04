@@ -159,7 +159,6 @@
     width: 100vw;
 }
 .h1Races{
-    font-family: 'Exo 2',sans-serif;
     color: white;
     text-align: center;
     font-size: 400%;
@@ -172,7 +171,6 @@
     animation-duration: 1.5s;
 }
 .tableRaces{
-    font-family: 'Exo 2',sans-serif;
     color: white;
     border-color: white; 
     border-style:solid;

@@ -1,0 +1,52 @@
+.mainCircuitos{
+    background-color: map-get($color,fondo);
+    background-image: url($foto-fondo);
+    font-family: $tipografia-texto;
+    width: 100vw;
+}
+.h1Circuitos{
+    font-size: 400%;
+    color: map-get($color,texto);
+    text-align: center;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 6%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
+}
+.circuitos{
+    text-align: center;
+}
+.fotoCircuitos{
+    height: 65%;
+    width: 85%;
+}
+.h2Circuitos{
+    font-size: 200%;
+    width: 350px;
+    color:map-get($color,texto);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin:auto;
+}
+.h3Circuitos{
+    font-size: 100%;
+    font-weight: lighter;
+    color: map-get($color,texto);
+    text-align: justify;
+    width: 350px;
+    margin:auto;
+}
+
+@media only screen and (max-width:992px){
+    .h2Circuitos{
+        width:85%;
+    }
+    .h3Circuitos{
+        width:85%;
+    }
+}

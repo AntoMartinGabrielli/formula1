@@ -1,0 +1,41 @@
+.mainContacto{
+    background-color: map-get($color,fondo);
+    background-image: url($foto-fondo);
+    font-family: $tipografia-texto;
+    height: 100vh;
+    width: 100vw;
+}
+.h2Contacto{
+    font-size: 350%;
+    color:map-get($color,texto);
+    padding-top: 3%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
+}
+.pContacto{
+    font-size: 150%;
+    color: map-get($color,texto);
+    padding-top: 3%;
+}
+.fotoContacto{
+    width:100%;
+}
+
+@media only screen and (max-width:992px){
+    .fotoContacto{
+        padding-top: 5%;
+        padding-right:10%;
+        padding-left: 10%;
+    }
+    .infoContacto{
+        padding-left: 10%;
+    }
+}
+@media only screen and (max-width:480px){
+    .h2Contacto{
+        font-size: 250%;
+    }
+    .pContacto{
+        font-size: 100%;
+    }
+}

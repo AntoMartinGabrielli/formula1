@@ -1,0 +1,109 @@
+.mainIndex{
+    height: auto;
+    background-color: map-get($color,fondo);
+    background-image: url($foto-fondo);
+    font-family: $tipografia-texto;
+    width: 100vw;
+}
+.tituloIndex{
+    color:map-get($color,texto);
+    font-weight: bold;
+    font-size: 500%;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    word-spacing: 30px;
+    letter-spacing: 15px;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
+}
+.infoMain{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.fotoIndex{
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.h2Index{
+    color:map-get($color,texto);
+    font-size: 250%;
+    padding-bottom: 5%;
+}
+.h3Index{
+    color:map-get($color,texto);
+    font-size: 180%;
+    padding-bottom: 5%;
+} 
+.h4Index{
+    color:map-get($color,texto);
+    font-size: 100%;
+    font-weight: lighter;
+    text-align: justify;
+    padding-bottom: 5%;
+}
+.numeros{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    animation-name: animacionNumeros;
+    animation-duration: 2s;
+}
+.listaNumeros{
+    color:map-get($color,texto);
+    list-style: none;
+    text-align: center;
+    font-size: 120%;
+    border-color: rgb(97, 0, 0) ;
+    border-radius: 5%;
+    border-style: solid;
+    background-color: black; 
+    position: relative;
+    animation-name: animarNumeros; 
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &Tamaño{
+        font-size: 250%;
+    }
+}
+@keyframes animarNumeros {
+    from { box-shadow: none;}
+    to {box-shadow: -10px -10px 20px rgb(97, 0, 0);}
+}
+.carousel{
+    margin-right: 10%;
+    margin-left:10% ;
+    padding-top:5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.fotoMiniGaleria{
+    height: 80%;
+}
+@media only screen and (max-width:500px){
+    .tituloIndex{
+        font-size: 310%;
+    }
+    .h2Index{
+        font-size: 200%;
+    }
+    .h3Index{
+        font-size: 130%;
+    }
+    .h4Index{
+        font-size: 80%;
+        font-weight: normal;
+    }
+    .listaNumeros{
+        font-size: 100% ;
+        &Tamaño{
+            font-size: 180%;
+        }
+    }
+}

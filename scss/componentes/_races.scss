@@ -1,0 +1,75 @@
+.mainRaces{
+    background-color:map-get($color, fondo);
+    background-image: url($foto-fondo);
+    font-family: $tipografia-texto;
+    width: 100vw;
+
+    .h1Races{
+        color: map-get($color, texto);
+        text-align: center;
+        font-size: 400%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-bottom: 10%;
+        margin-right: 5%;
+        margin-left: 5%;
+        animation-name: animarTitulo;
+        animation-duration: 1.5s;
+    }
+
+    .tableRaces{
+        color: map-get($color, texto);
+        border-color: white; 
+        border-style:solid;
+        background-color: rgba(153, 10, 10, 0.85);
+        margin:auto;
+        border-collapse: collapse;
+        line-height: 2;
+        text-align: center;
+        position:relative;
+        bottom: 50px;
+        width: 85%;
+
+        .tableRowsFirst{
+            background-color: rgb(97, 0, 0);
+
+            .tableParts{
+                border-color:white;
+                border-style: solid;
+            }
+        }
+
+        .tableRows{
+            background-color: rgba(97, 0, 0, 0.616);
+            
+            .tableParts{
+                border-color:white;
+                border-style: solid;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:560px) {
+    .tableRaces{
+        font-size: 60%;
+        margin-top: 10%;
+    }
+    .h1Races{
+        font-size: 300%;
+        padding-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .tableRaces{
+        font-size: 50%;
+        margin-top: 10%;
+    }
+    .h1Races{
+        font-size: 240%;
+        padding-bottom: 10%;
+    }
+}
+

@@ -1,0 +1,17 @@
+.footer{
+    background-color:map-get($color,header-footer);
+    height: 50px;
+    font-family: $tipografia-texto;
+    width: 100vw;
+    &Lista{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-left: 0%;
+        .redesSociales{
+            color:map-get($color,redes-sociales);
+        }
+    }
+}

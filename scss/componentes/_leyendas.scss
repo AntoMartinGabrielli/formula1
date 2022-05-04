@@ -1,0 +1,84 @@
+.mainLeyendas{
+    background-color: map-get($color, fondo);
+    background-image: url($foto-fondo);
+    font-family: $tipografia-texto;
+    width: 100vw;
+}                                  
+.h1Leyendas{
+    font-size: 400%;
+    color: map-get($color, texto);
+    text-align: center;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 6%;
+    margin-left: 5%;
+    animation-name: animarTitulo;
+    animation-duration: 1.5s;
+}        
+.leyendas1{
+    text-align: right;
+    padding-bottom: 8%;
+}
+.divLeyendas{
+    padding:0;
+}
+.h2Leyendas1{
+    font-size: 300%;
+    color: map-get($color, texto);
+}
+.h3Leyendas1{
+    font-size: 100%;
+    color:map-get($color, texto);
+    font-weight: lighter;
+    text-align: justify;
+}
+.fotoLeyendas{
+    height: 320px;
+    width: 550px;
+}
+
+@media only screen and (max-width:992px){
+    .leyendas1{
+        flex-direction: column;
+        text-align: left;
+    }
+    .fotoLeyendas{
+        height: 280px;
+        width: 480px;
+        margin-bottom: 10%;
+        padding-left: 8%;
+    }
+    .h2Leyendas1{
+        padding-left:8%;
+    }
+    .h3Leyendas1{
+        padding-left: 8%;
+        padding-right: 8%;
+        margin-bottom: 5%;
+    }
+}
+@media only screen and (max-width:600px){
+    .fotoLeyendas{
+        height: 205px;
+        width: 350px;
+    }
+    .h1Leyendas{
+        font-size: 300%;
+    } 
+    .h2Leyendas1{
+        font-size:220%;
+    }
+    .h3Leyendas1{
+        font-size:90%;
+    }
+}
+@media only screen and (max-width:450px){
+    .fotoLeyendas{
+        height: 145px;
+        width: 250px;
+    }
+    .h1Leyendas{
+        font-size: 250%;
+    }
+}

@@ -1,0 +1,16 @@
+.barra{
+    background-color:map-get($color,header-footer);
+    font-family: $tipografia-texto;
+}
+.logoNav{
+    width: 100px;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content:end;
+}
+.nav-link{
+    font-size: 110%;
+    font-weight: bold;
+    text-align: right;
+}
