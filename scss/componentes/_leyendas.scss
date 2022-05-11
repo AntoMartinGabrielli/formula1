@@ -5,14 +5,8 @@
     width: 100vw;
 }                                  
 .h1Leyendas{
-    font-size: 400%;
+    @extend %texto-titulo;
     color: map-get($color, texto);
-    text-align: center;
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 6%;
-    margin-left: 5%;
     animation-name: animarTitulo;
     animation-duration: 1.5s;
 }        
@@ -28,10 +22,9 @@
     color: map-get($color, texto);
 }
 .h3Leyendas1{
-    font-size: 100%;
+    @include font (100%, justify);
     color:map-get($color, texto);
     font-weight: lighter;
-    text-align: justify;
 }
 .fotoLeyendas{
     height: 320px;
@@ -46,7 +39,7 @@
     .fotoLeyendas{
         height: 280px;
         width: 480px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         padding-left: 8%;
     }
     .h2Leyendas1{

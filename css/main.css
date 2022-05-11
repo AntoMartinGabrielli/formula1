@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* EXTEND */
+.mainRaces .h1Races, .h1PyE, .h1Leyendas, .h1Circuitos {
+  text-align: center;
+  font-size: 400%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -36,16 +45,16 @@
 
 .mainIndex {
   height: auto;
-  background-color: grey;
-  background-image: url("/imagenes/carbon_fibre.png");
+  background-color: #3a3939;
+  background-image: url("../imagenes/carbon_fibre.png");
   font-family: "Exo 2", sans-serif;
   width: 100vw; }
 
 .tituloIndex {
-  color: white;
-  font-weight: bold;
   font-size: 500%;
   text-align: center;
+  color: white;
+  font-weight: bold;
   margin-bottom: 10%;
   padding-top: 10%;
   word-spacing: 30px;
@@ -65,20 +74,22 @@
   padding-bottom: 5%; }
 
 .h2Index {
-  color: white;
   font-size: 250%;
+  text-align: left;
+  color: white;
   padding-bottom: 5%; }
 
 .h3Index {
-  color: white;
   font-size: 180%;
+  text-align: left;
+  color: white;
   padding-bottom: 5%; }
 
 .h4Index {
-  color: white;
   font-size: 100%;
-  font-weight: lighter;
   text-align: justify;
+  color: white;
+  font-weight: lighter;
   padding-bottom: 5%; }
 
 .numeros {
@@ -88,10 +99,10 @@
   animation-duration: 2s; }
 
 .listaNumeros {
+  font-size: 120%;
+  text-align: center;
   color: white;
   list-style: none;
-  text-align: center;
-  font-size: 120%;
   border-color: #610000;
   border-radius: 5%;
   border-style: solid;
@@ -138,19 +149,13 @@
       font-size: 180%; } }
 
 .mainRaces {
-  background-color: grey;
-  background-image: url("/imagenes/carbon_fibre.png");
+  background-color: #3a3939;
+  background-image: url("../imagenes/carbon_fibre.png");
   font-family: "Exo 2", sans-serif;
   width: 100vw; }
   .mainRaces .h1Races {
     color: white;
-    text-align: center;
-    font-size: 400%;
-    padding-top: 5%;
-    padding-bottom: 5%;
     margin-bottom: 10%;
-    margin-right: 5%;
-    margin-left: 5%;
     animation-name: animarTitulo;
     animation-duration: 1.5s; }
   .mainRaces .tableRaces {
@@ -193,19 +198,13 @@
     padding-bottom: 10%; } }
 
 .mainPyE {
-  background-color: grey;
-  background-image: url("/imagenes/carbon_fibre.png");
+  background-color: #3a3939;
+  background-image: url("../imagenes/carbon_fibre.png");
   font-family: "Exo 2", sans-serif;
   width: 100vw; }
 
 .h1PyE {
-  font-size: 400%;
   color: white;
-  text-align: center;
-  margin-right: 5%;
-  margin-left: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
   animation-name: animarTitulo;
   animation-duration: 1.5s; }
 
@@ -229,41 +228,57 @@
   height: 380px; }
 
 .h2Equipos {
-  color: white;
   font-size: 300%;
-  margin-left: 5%; }
+  text-align: left;
+  color: white;
+  margin-left: 5%;
+  padding-top: 5%; }
 
 .h3Pilotos {
+  font-size: 180%;
+  text-align: left;
   color: white;
   font-size: 180%;
   text-align: left; }
 
 .h4Equipos {
-  color: white;
   font-size: 120%;
+  text-align: justify;
+  color: white;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 2%;
-  font-weight: lighter;
-  text-align: justify; }
+  font-weight: lighter; }
 
 .h4Pilotos {
-  margin-top: 5%;
-  color: white;
   font-size: 120%;
-  font-weight: lighter;
   text-align: left;
+  color: white;
+  font-weight: lighter;
   line-height: 2; }
+
+@media only screen and (max-width: 1250px) {
+  .fotoPilotos {
+    height: auto;
+    width: 100%; } }
 
 @media only screen and (max-width: 992px) {
   .fotoP {
-    padding-left: 10%; } }
+    padding-left: 10%;
+    padding-bottom: 5%; }
+  .fotoPilotos {
+    height: 380px;
+    width: auto; } }
 
 @media only screen and (max-width: 768px) {
   .infoP {
     padding-left: 10%; }
   .logoEquipo {
-    height: 80px; } }
+    height: 80px; }
+  .fotoP {
+    padding-bottom: 2.5%; }
+  .h4Pilotos {
+    padding-bottom: 5%; } }
 
 @media only screen and (max-width: 550px) {
   .fotoPilotos {
@@ -282,20 +297,13 @@
     font-size: 90%; } }
 
 .mainLeyendas {
-  background-color: grey;
-  background-image: url("/imagenes/carbon_fibre.png");
+  background-color: #3a3939;
+  background-image: url("../imagenes/carbon_fibre.png");
   font-family: "Exo 2", sans-serif;
   width: 100vw; }
 
 .h1Leyendas {
-  font-size: 400%;
   color: white;
-  text-align: center;
-  position: relative;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-right: 6%;
-  margin-left: 5%;
   animation-name: animarTitulo;
   animation-duration: 1.5s; }
 
@@ -312,9 +320,9 @@
 
 .h3Leyendas1 {
   font-size: 100%;
+  text-align: justify;
   color: white;
-  font-weight: lighter;
-  text-align: justify; }
+  font-weight: lighter; }
 
 .fotoLeyendas {
   height: 320px;
@@ -327,7 +335,7 @@
   .fotoLeyendas {
     height: 280px;
     width: 480px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding-left: 8%; }
   .h2Leyendas1 {
     padding-left: 8%; }
@@ -355,21 +363,13 @@
     font-size: 250%; } }
 
 .mainCircuitos {
-  background-color: grey;
-  background-image: url("/imagenes/carbon_fibre.png");
+  background-color: #3a3939;
+  background-image: url("../imagenes/carbon_fibre.png");
   font-family: "Exo 2", sans-serif;
   width: 100vw; }
 
 .h1Circuitos {
-  font-size: 400%;
   color: white;
-  text-align: center;
-  position: relative;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-right: 6%;
-  margin-left: 5%;
-  margin-bottom: 5%;
   animation-name: animarTitulo;
   animation-duration: 1.5s; }
 
@@ -382,18 +382,18 @@
 
 .h2Circuitos {
   font-size: 200%;
+  text-align: center;
   width: 350px;
   color: white;
-  text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
   margin: auto; }
 
 .h3Circuitos {
   font-size: 100%;
+  text-align: justify;
   font-weight: lighter;
   color: white;
-  text-align: justify;
   width: 350px;
   margin: auto; }
 
@@ -404,14 +404,15 @@
     width: 85%; } }
 
 .mainContacto {
-  background-color: grey;
-  background-image: url("/imagenes/carbon_fibre.png");
+  background-color: #3a3939;
+  background-image: url("../imagenes/carbon_fibre.png");
   font-family: "Exo 2", sans-serif;
-  height: 100vh;
+  min-height: auto;
   width: 100vw; }
 
 .h2Contacto {
   font-size: 350%;
+  text-align: left;
   color: white;
   padding-top: 3%;
   animation-name: animarTitulo;
@@ -419,6 +420,7 @@
 
 .pContacto {
   font-size: 150%;
+  text-align: justify;
   color: white;
   padding-top: 3%; }
 
@@ -429,9 +431,13 @@
   .fotoContacto {
     padding-top: 5%;
     padding-right: 10%;
-    padding-left: 10%; }
+    padding-left: 10%;
+    padding-bottom: 10%; }
   .infoContacto {
-    padding-left: 10%; } }
+    padding-left: 10%; }
+  .formulario {
+    padding-right: 10%;
+    padding-left: 7.5%; } }
 
 @media only screen and (max-width: 480px) {
   .h2Contacto {

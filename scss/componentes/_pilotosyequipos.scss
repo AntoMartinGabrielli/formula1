@@ -5,13 +5,8 @@
     width: 100vw;
 }
 .h1PyE{
-    font-size: 400%;
+    @extend %texto-titulo;
     color: map-get($color, texto);
-    text-align: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
     animation-name: animarTitulo;
     animation-duration: 1.5s;
 }
@@ -35,37 +30,48 @@
     height: 380px;
 }
 .h2Equipos{
+    @include font (300%, left);
     color: map-get($color, texto);
-    font-size: 300%;
     margin-left: 5%;
+    padding-top: 5%;
 }
 .h3Pilotos{
+    @include font (180%, left);
     color: map-get($color, texto);
     font-size: 180%;
     text-align: left;
 }
 .h4Equipos{
+    @include font (120%, justify);
     color:map-get($color, texto);
-    font-size: 120%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
     font-weight: lighter;
-    text-align: justify;
 }
 .h4Pilotos{
-    margin-top:5%;
+    @include font (120%, left);
     color: map-get($color, texto);
-    font-size: 120%;
     font-weight: lighter;
-    text-align: left;
     line-height: 2;
+}
+
+@media only screen and (max-width:1250px){
+    .fotoPilotos{
+       height: auto;
+       width: 100%;
+    }
 }
 
 @media only screen and (max-width:992px){
     .fotoP{
         padding-left: 10%;
+        padding-bottom: 5%;
     }
+    .fotoPilotos{
+        height: 380px;
+        width: auto;
+     }
 }
 
 @media only screen and (max-width:768px){
@@ -74,6 +80,12 @@
     }
     .logoEquipo{
         height: 80px;
+    }
+    .fotoP{
+        padding-bottom: 2.5%;
+    }
+    .h4Pilotos{
+        padding-bottom: 5%;
     }
 }
 

@@ -6,10 +6,9 @@
     width: 100vw;
 }
 .tituloIndex{
+    @include font (500%, center);
     color:map-get($color,texto);
     font-weight: bold;
-    font-size: 500%;
-    text-align: center;
     margin-bottom: 10%;
     padding-top: 10%;
     word-spacing: 30px;
@@ -29,20 +28,19 @@
     padding-bottom: 5%;
 }
 .h2Index{
+    @include font (250%, left);
     color:map-get($color,texto);
-    font-size: 250%;
     padding-bottom: 5%;
 }
 .h3Index{
+    @include font (180%, left);
     color:map-get($color,texto);
-    font-size: 180%;
     padding-bottom: 5%;
 } 
 .h4Index{
+    @include font (100%, justify);
     color:map-get($color,texto);
-    font-size: 100%;
     font-weight: lighter;
-    text-align: justify;
     padding-bottom: 5%;
 }
 .numeros{
@@ -52,10 +50,9 @@
     animation-duration: 2s;
 }
 .listaNumeros{
+    @include font (120%, center);
     color:map-get($color,texto);
     list-style: none;
-    text-align: center;
-    font-size: 120%;
     border-color: rgb(97, 0, 0) ;
     border-radius: 5%;
     border-style: solid;

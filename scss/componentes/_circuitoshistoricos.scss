@@ -5,15 +5,8 @@
     width: 100vw;
 }
 .h1Circuitos{
-    font-size: 400%;
+    @extend %texto-titulo;
     color: map-get($color,texto);
-    text-align: center;
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-right: 6%;
-    margin-left: 5%;
-    margin-bottom: 5%;
     animation-name: animarTitulo;
     animation-duration: 1.5s;
 }
@@ -25,19 +18,17 @@
     width: 85%;
 }
 .h2Circuitos{
-    font-size: 200%;
+    @include font (200%, center);
     width: 350px;
     color:map-get($color,texto);
-    text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
     margin:auto;
 }
 .h3Circuitos{
-    font-size: 100%;
+    @include font (100%, justify);
     font-weight: lighter;
     color: map-get($color,texto);
-    text-align: justify;
     width: 350px;
     margin:auto;
 }

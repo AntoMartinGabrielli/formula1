@@ -258,6 +258,8 @@
     color: white;
     font-size: 300%;
     margin-left: 5%;
+    padding-top: 5%;
+    text-align: left;
 }
 .h3Pilotos{
     color: white;
@@ -274,7 +276,6 @@
     text-align: justify;
 }
 .h4Pilotos{
-    margin-top:5%;
     color: white;
     font-size: 120%;
     font-weight: lighter;
@@ -282,10 +283,22 @@
     line-height: 2;
 }
 
+@media only screen and (max-width:1250px){
+    .fotoPilotos{
+       height: auto;
+       width: 100%;
+    }
+}
+
 @media only screen and (max-width:992px){
     .fotoP{
         padding-left: 10%;
+        padding-bottom: 5%;
     }
+    .fotoPilotos{
+        height: 380px;
+        width: auto;
+     }
 }
 
 @media only screen and (max-width:768px){
@@ -294,6 +307,12 @@
     }
     .logoEquipo{
         height: 80px;
+    }
+    .fotoP{
+        padding-bottom: 2.5%;
+    }
+    .h4Pilotos{
+        padding-bottom: 5%;
     }
 }
 
@@ -370,8 +389,9 @@
     .fotoLeyendas{
         height: 280px;
         width: 480px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         padding-left: 8%;
+
     }
     .h2Leyendas1{
         padding-left:8%;
@@ -465,7 +485,7 @@
     background-color: grey;
     background-image: url(./imagenes/carbon_fibre.png);
     font-family: 'Exo 2', sans-serif;
-    height: 100vh;
+    height: auto;
     width: 100vw;
 }
 .h2Contacto{
@@ -489,9 +509,14 @@
         padding-top: 5%;
         padding-right:10%;
         padding-left: 10%;
+        padding-bottom: 10%;
     }
     .infoContacto{
         padding-left: 10%;
+    }
+    .formulario{
+        padding-right: 10%;
+        padding-left: 7.5%;
     }
 }
 @media only screen and (max-width:480px){

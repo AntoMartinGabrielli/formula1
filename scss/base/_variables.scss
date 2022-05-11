@@ -1,8 +1,23 @@
 $color:(
     header-footer:rgb(133, 133, 133),
     texto:white,
-    fondo:grey,
+    fondo:rgb(58, 57, 57),
     redes-sociales:white
 );
-$foto-fondo: "/imagenes/carbon_fibre.png";
+$foto-fondo: ("../imagenes/carbon_fibre.png");
 $tipografia-texto: 'Exo 2',sans-serif;
+
+/* EXTEND */
+%texto-titulo{
+    text-align: center;
+    font-size: 400%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@mixin font ($tamanio, $alineacion){
+    font-size: $tamanio;
+    text-align: $alineacion;
+}

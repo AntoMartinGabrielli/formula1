@@ -5,14 +5,9 @@
     width: 100vw;
 
     .h1Races{
+        @extend %texto-titulo;
         color: map-get($color, texto);
-        text-align: center;
-        font-size: 400%;
-        padding-top: 5%;
-        padding-bottom: 5%;
         margin-bottom: 10%;
-        margin-right: 5%;
-        margin-left: 5%;
         animation-name: animarTitulo;
         animation-duration: 1.5s;
     }
