@@ -156,7 +156,6 @@
   .mainRaces .h1Races {
     color: white;
     margin-bottom: 10%;
-    animation-name: animarTitulo;
     animation-duration: 1.5s; }
   .mainRaces .tableRaces {
     color: white;
